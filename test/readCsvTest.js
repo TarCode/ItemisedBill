@@ -1,4 +1,4 @@
-var readCSV = require('../readCSV');
+var readCSV = require('../methods/readCSV');
 var assert = require("assert");
 
 describe('Read Itemised Bill CSV', function(){
