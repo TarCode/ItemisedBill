@@ -1,6 +1,3 @@
-
-var fs = require('fs');
-
 exports.getPhoneCalls = function(billMap, serviceProvider) {
   var phoneCallList = [];
     for (var x in billMap){
