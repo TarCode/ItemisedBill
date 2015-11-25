@@ -3,7 +3,8 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     app = express()
     readCSV = require('./methods/readCSV'),
-    getPhoneCalls = require("./methods/getPhoneCalls");
+    getPhoneCalls = require("./methods/getPhoneCalls"),
+    callDuration = require("./methods/callDuration");
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -14,8 +15,12 @@ app.use(bodyParser.json());
 
 var bill = readCSV.readCSV('./ItemisedBill.csv');
 var mtn = getPhoneCalls.getPhoneCalls(bill, "MTN");
+    mtn = callDuration.callDuration(mtn);
 var vodacom = getPhoneCalls.getPhoneCalls(bill, "Vodacom");
+    vodacom = callDuration.callDuration(vodacom);
 var cellc = getPhoneCalls.getPhoneCalls(bill, "CellC");
+    cellc = callDuration.callDuration(cellc);
+
 
 
 app.get('/', function(req, res){
