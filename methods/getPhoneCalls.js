@@ -2,9 +2,9 @@ exports.getPhoneCalls = function(billMap, serviceProvider) {
   var phoneCallList = [];
     for (var x in billMap){
       if(billMap[x].provider == serviceProvider && billMap[x] !== undefined){
-        phoneCallList.push({"Provider": billMap[x].provider,
-                            "Number":   billMap[x].number,
-                            "Duration": billMap[x].duration
+        phoneCallList.push({"provider": billMap[x].provider,
+                            "number":   billMap[x].number,
+                            "duration": billMap[x].duration
                           });
       }
     }

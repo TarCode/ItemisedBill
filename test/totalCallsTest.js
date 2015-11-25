@@ -3,8 +3,8 @@ var getPhoneCalls = require('../methods/getPhoneCalls');
 var readCSV = require("../methods/readCSV");
 var assert = require("assert");
 
-describe('Gets total duration of phone calls to a specific number from a given service provider', function(){
-    it('returns list of phone calls from MTN', function (done) {
+describe('Gets total amount of phone calls to a specific number from a given service provider', function(){
+    it('returns list of total phone calls to a number from MTN', function (done) {
       var billMap = readCSV.readCSV("./ItemisedBill.csv");
       var providerMap = getPhoneCalls.getPhoneCalls(billMap, "MTN");
       var results = { '0832401145': 5,

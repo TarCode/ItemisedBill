@@ -3,11 +3,11 @@ exports.totalCalls = function(providerMap) {
   for (var x in providerMap){
 
 
-    if(!totalCallsMap[providerMap[x].Number]){
-      totalCallsMap[providerMap[x].Number] = 1;
+    if(!totalCallsMap[providerMap[x].number]){
+      totalCallsMap[providerMap[x].number] = 1;
     }
     else{
-      totalCallsMap[providerMap[x].Number] += 1;
+      totalCallsMap[providerMap[x].number] += 1;
     }
 
   }

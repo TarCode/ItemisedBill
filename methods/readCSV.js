@@ -16,7 +16,7 @@ exports.readCSV = function(fileName) {
                 duration: fields[3]
             }
     });
-
+    itemisedBill.pop();
     return itemisedBill;
 
 }
