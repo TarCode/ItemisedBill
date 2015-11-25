@@ -1,0 +1,19 @@
+<div class="content panel-default">
+  <div class="panel-heading">{{provider}} Calls</div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <tr>
+        <th>Provider</th>
+        <th>Number</th>
+        <th>Duration</th>
+      </tr>
+      {{#bill}}
+      <tr>
+        <td>{{provider}}</td>
+        <td>{{number}}</td>
+        <td>{{duration}}</td>
+      <tr>
+      {{/bill}}
+    </table>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">All Calls</div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <tr>
+        <th>Date</th>
+        <th>Provider</th>
+        <th>Number</th>
+        <th>Duration</th>
+      </tr>
+      {{#bill}}
+      <tr>
+        <td>{{date}}</td>
+        <td>{{provider}}</td>
+        <td>{{number}}</td>
+        <td>{{duration}}</td>
+      <tr>
+      {{/bill}}
+    </table>
+  </div>
+</div>

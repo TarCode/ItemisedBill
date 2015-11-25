@@ -16,6 +16,9 @@
     "url": "https://github.com/TarCode/ItemisedBill/issues"
   },
   "dependencies": {
-    "mocha": "~2.3.4"
+    "mocha": "~2.3.4",
+    "body-parser": "~1.14.1",
+    "express": "~4.13.3",
+    "express-handlebars": "~2.0.1"
   }
 }
