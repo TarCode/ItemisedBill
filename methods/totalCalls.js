@@ -11,7 +11,6 @@ exports.totalCalls = function(providerMap) {
     }
 
   }
-  console.log(totalCallsMap);
     return totalCallsMap;
 
 }
