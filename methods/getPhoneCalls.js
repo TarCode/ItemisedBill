@@ -7,7 +7,6 @@ exports.getPhoneCalls = function(billMap, serviceProvider) {
                             "Duration": billMap[x].duration
                           });
       }
-
     }
     return phoneCallList;
 
